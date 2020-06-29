@@ -1,3 +1,10 @@
-body {
-    background-color: lightgrey;
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --ff-primary:'Work Sans', sans-serif;
+    --ff-secondary:'Fira Code', monospace;
 }
