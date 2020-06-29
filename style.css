@@ -29,3 +29,7 @@
         --fs-body: 1.125rem;
     }
 }
+
+body{
+    background-color: var(--clr-light);
+}
