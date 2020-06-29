@@ -7,4 +7,11 @@
 :root{
     --ff-primary:'Work Sans', sans-serif;
     --ff-secondary:'Fira Code', monospace;
+
+    --fw-regular: 300;
+    --fw-bold: 900;
+
+    --clr-light: #ffffff;
+    --clr-dark:#303030;
+    --clr-accent: #16e0bd;
 }
