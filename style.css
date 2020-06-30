@@ -44,6 +44,10 @@ img{
     max-width: 100%;
 }
 
+strong{
+    font-weight: var(--fw-bold);
+}
+
 h1,
 h2,
 h3{
@@ -63,6 +67,10 @@ h3{
 
 .section__title{
     margin-bottom: .25em;
+}
+
+.section__title--intro{
+    font-weight: var(--fw-regular);
 }
 
 .section__subtitle{
