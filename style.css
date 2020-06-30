@@ -144,5 +144,7 @@ nav{
     background-color: var(--clr-dark);
     background-image: url(./assets/laptopoffice3.jpg);
     background-size: cover;
+    background-blend-mode: multiply;
+    text-align: center;
     color: var(--clr-light);
 }
