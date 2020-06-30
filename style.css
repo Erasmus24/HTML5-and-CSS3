@@ -44,6 +44,11 @@ img{
     max-width: 100%;
 }
 
+header,
+section{
+    padding: 5em 2em;
+}
+
 strong{
     font-weight: var(--fw-bold);
 }
@@ -73,6 +78,10 @@ h3{
     font-weight: var(--fw-regular);
 }
 
+.section__title--intro strong{
+    display: block;
+}
+
 .section__subtitle{
     margin: 0;
     font-size: var(--fs-h3);
@@ -82,4 +91,12 @@ h3{
 .section__subtitle--about{
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
+}
+
+nav{
+    display: none;
+}
+
+.intro{
+    position: relative;
 }
