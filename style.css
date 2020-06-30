@@ -139,3 +139,10 @@ nav{
         width: calc(100% + 1.5em);
     }
 }
+
+.my__services{
+    background-color: var(--clr-dark);
+    background-image: url(./assets/laptopoffice3.jpg);
+    background-size: cover;
+    color: var(--clr-light);
+}
