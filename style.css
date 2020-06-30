@@ -110,4 +110,9 @@ nav{
         "img subtitle";
         grid-template-columns: min-content max-content;
     }
+
+    .intro__img{
+        grid-area: img;
+        min-width: 250px;
+    }
 }
