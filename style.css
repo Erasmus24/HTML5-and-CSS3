@@ -56,6 +56,20 @@ strong{
     font-weight: var(--fw-bold);
 }
 
+.btn{
+    display: inline-block;
+    padding: .5em 1.5em;
+    background: var(--clr-accent);
+    text-decoration: none;
+    font-size: .8em;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+
+}
+
 h1,
 h2,
 h3{
@@ -161,6 +175,11 @@ nav{
     height: 2px;
     margin: 0.5em auto 1em;
     background: currentColor;
+}
+
+.service{
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 @media (min-width: 800px){
