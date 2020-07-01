@@ -56,6 +56,11 @@ strong{
     font-weight: var(--fw-bold);
 }
 
+:focus{
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
+
 .btn{
     display: inline-block;
     padding: .5em 1.5em;
@@ -181,6 +186,10 @@ nav{
     background: currentColor;
 }
 
+.services{
+    margin-bottom: 4em;
+}
+
 .service{
     max-width: 500px;
     margin: 0 auto;
@@ -190,7 +199,8 @@ nav{
     .services{
         display: flex;
         max-width: 1000px;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .service + .service{
