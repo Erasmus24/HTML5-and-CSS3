@@ -157,4 +157,8 @@ nav{
 .section__title--services::after{
     content: '';
     display: block;
+    width: 12em;
+    height: 2px;
+    margin: 0.5em auto 1em;
+    background: currentColor;
 }
