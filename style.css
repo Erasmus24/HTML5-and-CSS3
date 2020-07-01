@@ -148,3 +148,13 @@ nav{
     text-align: center;
     color: var(--clr-light);
 }
+
+.section__title--services{
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section__title--services::after{
+    content: '';
+    display: block;
+}
