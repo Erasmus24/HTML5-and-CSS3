@@ -70,7 +70,7 @@ strong{
     font-size: 1.1rem;
     text-transform: uppercase;
     cursor: pointer;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-weight: var(--fw-bold);
     transition: transform 500ms ease-in-out;
 }
@@ -205,5 +205,17 @@ nav{
 
     .service + .service{
         margin-left: 2em;
+    }
+}
+
+.about-me{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (min-width: 600px){
+    .about-me{
+        display: grid;
+        grid-template-columns: 1fr 200px;
     }
 }
