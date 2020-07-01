@@ -245,9 +245,13 @@ nav{
 
     .about-me__img{
         grid-area: img;
-        /* height: 20em; */
-        /* width: 20em; */
         position: relative;
         z-index: 2;
     }
+}
+
+.my-work{
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    
 }
