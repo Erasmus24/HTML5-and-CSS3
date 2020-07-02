@@ -260,3 +260,8 @@ nav{
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
 }
+
+.portfolio{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
