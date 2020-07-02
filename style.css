@@ -259,9 +259,10 @@ nav{
 .section__subtitle--work{
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
+    margin-bottom: 2em;
 }
 
 .portfolio{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
