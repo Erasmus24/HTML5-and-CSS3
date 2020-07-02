@@ -267,17 +267,19 @@ nav{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-/* .portfolio__item{
+.portfolio__item{
     background-color: var(--clr-accent);
-} */
+    overflow: hidden;
+}
 
 .portfolio__img{
     transition: 
-        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        transform 1000ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
+        
 }
 
 .portfolio__img:hover{
     transform: scale(1.2);
-    opacity: .75;
+    opacity: .5;
 }
