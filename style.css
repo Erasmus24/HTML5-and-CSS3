@@ -296,7 +296,16 @@ nav{
     text-decoration: none;
 }
 
+.footer__link{
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
+}
+
 .footer__link:hover,
 .social-list__link:hover{
     opacity: .5;
+}
+
+.footer__link:hover{
+    text-decoration: underline;
 }
