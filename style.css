@@ -289,6 +289,7 @@ nav{
     color: var(--clr-accent);
     text-align: center;
     padding: 2.5em 0;
+    font-size: var(--fs-h3);
 }
 
 .footer a{
@@ -297,7 +298,7 @@ nav{
 }
 
 .footer__link{
-    font-size: var(--fs-h3);
+    
     font-weight: var(--fw-bold);
 }
 
@@ -305,7 +306,7 @@ nav{
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 2em 0;
+    margin: 2em 0 0;
     padding: 0;
 }
 
