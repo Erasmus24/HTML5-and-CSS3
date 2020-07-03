@@ -283,3 +283,10 @@ nav{
     transform: scale(1.2);
     opacity: .5;
 }
+
+.footer{
+    background: #111;
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 2.5em;
+}
