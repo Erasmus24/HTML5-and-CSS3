@@ -301,6 +301,22 @@ nav{
     font-weight: var(--fw-bold);
 }
 
+.social-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+    padding: 0;
+}
+
+.social-list__item{
+    margin: 0 .5em;
+}
+
+.social-list__link{
+    padding: .5em;
+}
+
 .footer__link:hover,
 .social-list__link:hover{
     opacity: .5;
