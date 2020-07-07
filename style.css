@@ -282,7 +282,7 @@ header{
     right: 0;
     z-index: 100;
 
-    transform: translateX(0%);
+    transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
 
@@ -293,10 +293,19 @@ header{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .nav__link{
     color: inherit;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h2);
+    text-decoration: none;
+}
+
+.nav__link:hover{
+    color: var(--clr-accent);
 }
 
 .portfolio{
