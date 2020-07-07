@@ -262,8 +262,27 @@ nav{
     margin-bottom: 2em;
 }
 
+header{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
 .logo{
-    max-width: 250px;
+    max-width: 150px;
+}
+
+.nav{
+    position: fixed;
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    transform: translateX(50%);
 }
 
 .portfolio{
