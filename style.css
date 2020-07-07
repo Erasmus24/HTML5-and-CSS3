@@ -286,6 +286,12 @@ header{
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
 
+.nav--toggle{
+    padding: .25em;
+    background: transparent;
+    border: 0;
+}
+
 .nav__list{
     list-style: none;
     display: flex;
@@ -306,6 +312,37 @@ header{
 
 .nav__link:hover{
     color: var(--clr-accent);
+}
+
+.hamburger{
+    display: block;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+    background: var(--clr-dark);
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.hamburger::before{
+    top: 6px;
+}
+
+.hamburger::after{
+    bottom: 6px;
 }
 
 .portfolio{
