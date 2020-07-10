@@ -314,7 +314,7 @@ header{
     color: var(--clr-accent);
 }
 
-.nav--toggle{
+.nav-toggle{
     padding: 5em;
     background: transparent;
     border: 0;
