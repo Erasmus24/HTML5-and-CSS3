@@ -395,6 +395,8 @@ button .nav-toggle{
 .portfolio__item{
     background-color: var(--clr-accent);
     overflow: hidden;
+    max-block-size: 319px;
+    min-block-size: 300px;
 }
 
 .portfolio__img{
