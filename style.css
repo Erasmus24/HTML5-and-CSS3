@@ -276,6 +276,11 @@ header{
     max-width: 150px;
 }
 
+button .nav-toggle{
+    position: sticky;
+    top: 0;
+}
+
 .nav{
     position: fixed;
     background: var(--clr-dark);
@@ -353,7 +358,7 @@ header{
 
 .hamburger{
     display: block;
-    position: relative;
+    position: fixed;
 }
 
 .hamburger,
@@ -450,4 +455,11 @@ header{
 .portfolio-item-individual{
     padding: 0 2em 2em;
     max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
