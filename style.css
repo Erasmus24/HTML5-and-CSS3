@@ -102,6 +102,11 @@ h3{
     font-size: var(--fs-h3);
 }
 
+#home{
+    min-height: 700px;
+    
+}
+
 .wrapper {
     /* height: 100vh; */
     /*This part is important for centering*/
@@ -109,14 +114,14 @@ h3{
     place-items: center;
   }
   
-  .typing-demo {
+  /* .typing-demo {
     width: 22ch; 
     animation: typing 5s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
     font-family: var(--ff-secondary);
-    /* font-size: 2em; */
+    /* font-size: 2em; 
   }
   
   @keyframes typing {
@@ -129,7 +134,107 @@ h3{
     50% {
       border-color: transparent
     }
+  } */
+
+  /* $slider-name: typing-slider;
+$slides: 3;
+$typing-duration: 5s;
+$tab-letters: 16 23 12; //number of characters in each paragraph
+$slider-font-size: 3rem;
+$background: #FFCC00; */
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+} */
+
+/* @keyframes cursor {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+
+@keyframes typing {
+  from { width: 100%; }
+  90%, to { width: 0; }
+}
+
+@keyframes slide {
+  #{100% / $slides} { font-size: $slider-font-size; letter-spacing: 3px; }
+  to { font-size: 0; letter-spacing: 0; }
+}
+
+.#{$slider-name} {
+  font-family: Consolas, monospace;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.#{$slider-name} p {
+  position: relative;
+  display: inline;
+  font-size: 0;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  animation: slide $typing-duration * $slides step-start infinite;
+}
+
+.#{$slider-name} p::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-left: 3px solid black;
+  background-color: $background;
+  animation: typing $typing-duration infinite,
+             cursor 1s infinite;
+}
+
+@each $letters in $tab-letters {
+  $i: index($tab-letters, $letters);
+  .#{$slider-name} p:nth-child(#{$i}) {
+    animation-delay:  $typing-duration * ($i - 1);
+    &::after {
+      animation-delay: $typing-duration * ($i - 1);
+      animation-timing-function: steps(#{$letters}), step-end;
+    }
   }
+} */
+
+.content {
+    width: 950px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+  }
+  .typedtext {
+    /* margin-top: 20%; */
+    /* border-right: 2px solid black; */
+    animation: blinkTextCursor 800ms steps(44) infinite normal;
+    height: 40px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    color: #000;
+    display: block;
+  }
+  
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: black;
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+  
 
 .section__title{
     margin-bottom: .25em;
@@ -144,8 +249,9 @@ h3{
 }
 
 .section__subtitle{
-    margin: 0;
+    margin-left: 10;
     font-size: var(--fs-h3);
+    
 }
 
 .section__subtitle--intro,
@@ -154,6 +260,7 @@ h3{
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
     padding: .25em 1em;
+    min-width: 600px;
 }
 
 nav{
@@ -162,11 +269,58 @@ nav{
 
 .intro{
     position: relative;
+    min-width: 300px;
 }
 
 .intro__img{
     box-shadow: var(--bs);
 }
+
+.video{
+  
+    /* The image used */
+  background-image: url("./assets/mat-blck.jpg");
+
+  /* Set a specific height */
+  min-height: 1000px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.glowing{
+      /* The image used */
+  background-image: url("./assets/black-desert.jpg");
+
+  /* Set a specific height */
+  min-height: 200px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.glow {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
 
 @media (min-width: 600px){
     .intro{
@@ -195,7 +349,29 @@ nav{
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
+        
     }
+    .content {
+        /* width: 100%; */
+        /* max-width: 400px; */
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+        text-align: left;
+      }
+      .typedtext {
+        /* margin-top: 20%; */
+        /* border-right: 2px solid black; */
+         /* max-width: 400px; */
+        animation: blinkTextCursor 800ms steps(44) infinite normal;
+        height: 40px;
+        margin-bottom: 15px;
+        color: #000;
+        display: block;
+      }
 }
 
 .my__services{
