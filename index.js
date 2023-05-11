@@ -13,7 +13,6 @@ navLinks.forEach(link => {
 
 /*
  * typingEffect()
- * It types an array of texts in a random order. I like random stuff🙃
  */
 function typingEffect() {
     const contactTexts = ['Sphiwe Erasmus Hadebe', 'A Full Stack Web Developer', 'A Front End Web Developer'];
