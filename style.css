@@ -687,6 +687,7 @@ button .nav-toggle{
     height: 250px;
     /* border: 1px solid #f1f1f1; */
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    border-radius: 20px;
   }
   
   /* This container is needed to position the front and back side */
@@ -716,7 +717,11 @@ button .nav-toggle{
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
     background-color: #009688;
-    color: black;
+    color: #e0f2f1;
+    font-family: 'Diplomata SC', cursive;
+    font-size: 30px;
+    padding-top: 20%;
+    border-radius: 5px;
   }
   
   /* Style the back side */
@@ -724,6 +729,7 @@ button .nav-toggle{
     background-color: #37474f;
     color: white;
     transform: rotateY(180deg);
+    border-radius: 5px;
   }
 
 .footer{
