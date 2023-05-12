@@ -178,6 +178,111 @@ nav{
     box-shadow: var(--bs);
 }
 
+
+  .video_section {
+    /* height: 800px;
+    background-color: #37474f;
+    display: flex; */
+
+       /* The image used */
+  background-image: url("./assets/mat-blck.jpg");
+
+  /* Set a specific height */
+  min-height: 1000px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+  .video_section video {
+    width: 800px;
+    height: 550px;
+    vertical-align: bottom;
+    margin-left: -500px;
+    margin-top: 50px;
+    padding: 0px;
+    z-index: 5;
+    position: absolute;
+  }
+  
+  @media screen and (max-width: 990px) {
+    video {
+      width: 500px;
+    }
+  }
+  
+  @media screen and (max-width: 660px) {
+    video {
+      width: 300px;
+      vertical-align: bottom;
+      margin-left: 0px;
+      margin-top: 50px;
+      padding: 0px;
+      z-index: 5;
+      position: absolute;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    video {
+      width: 20px;
+      height: 90px;
+      vertical-align: bottom;
+      margin-left: 0px;
+      margin-top: 50px;
+      padding: 0px;
+      z-index: 0;
+      position: absolute;
+    }
+  }
+  
+  @media screen and (max-width: 100px) {
+    .video_section video {
+      width: 20px;
+      height: 90px;
+      vertical-align: bottom;
+      margin-left: 0px;
+      margin-top: 50px;
+      padding: 0px;
+      z-index: 0;
+      position: absolute;
+    }
+  }
+  
+  .video_section .App-logo {
+    height: 1000px;
+    pointer-events: none;
+    margin-left: -750px;
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 0px;
+    margin-top: -117px;
+    z-index: 1;
+  }
+  
+  .video-logo {
+    display: flex;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
 .video{
   
     /* The image used */
