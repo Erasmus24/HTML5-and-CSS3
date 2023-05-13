@@ -717,7 +717,7 @@ button .nav-toggle{
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
     background-color: #009688;
-    color: #e0f2f1;
+    color: #f8bbd0;
     font-family: 'Diplomata SC', cursive;
     font-size: 30px;
     padding-top: 20%;
