@@ -15,23 +15,13 @@ document.addEventListener("mousemove", parallax);
 function parallax(event) {
   this.querySelectorAll(".about-me__img").forEach((shift) => {
     const position = shift.getAttribute("data-value");
-    const x = (window.innerWidth - event.pageX * position) / 150;
-    const y = (window.innerHeight - event.pageY * position) / 150;
+    const x = (event.pageX * position) / 210;
+    const y = (event.pageY * position) / 210;
 
     shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
   });
 }
 
-// document.addEventListener("mousemove", parallax);
-// function parallax(e){
-//     document.querySelectorAll(".about-me__img").forEach(function(move) {
-//             var moving_value = move.getAttribute("data-value");
-//             var x = (e.clientX * moving_value) / 250;
-//             var y = (e.clientY * moving_value) / 250;
-//             move.style.transform = "translateX(" + x +"px) translateY(" + y +" px)";
-//         }
-//     )
-// }
 
 /*
  * typingEffect()
