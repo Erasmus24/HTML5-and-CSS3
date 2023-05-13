@@ -14,7 +14,7 @@ navLinks.forEach(link => {
 document.addEventListener("mousemove", parallax);
 function parallax(event) {
   this.querySelectorAll(".about-me__img").forEach((shift) => {
-    const position = shift.getAttribute("data-value");
+    const position = shift.getAttribute("image-value");
     const x = (event.pageX * position) / 210;
     const y = (event.pageY * position) / 210;
 
