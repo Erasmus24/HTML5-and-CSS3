@@ -22,6 +22,16 @@ function parallax(event) {
   });
 }
 
+document.onreadystatechange = () => {
+    if (document.readyState === 'complete') {
+      document.getElementById("containerLoader").classList.add('hide'); 
+  
+      setTimeout(function(){ 
+        document.getElementById("containerLoader").style.display = 'none';
+      }, 1000);
+    }
+  };
+
 
 /*
  * typingEffect()
