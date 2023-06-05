@@ -680,8 +680,6 @@ button .nav-toggle{
     opacity: 0;
 }
 
-
-
 .hamburger{
     display: block;
     position: fixed;
@@ -780,7 +778,7 @@ button .nav-toggle{
     transform-style: preserve-3d;
   }
   
-  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Do a horizontal flip when you move the mouse over the flip box container */
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
@@ -796,20 +794,27 @@ button .nav-toggle{
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: #009688;
+    background-color: #546e7a;
     color: #f8bbd0;
     font-family: 'Diplomata SC', cursive;
     font-size: 30px;
     padding-top: 20%;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: 3px solid #cfd8dc;
+    text-align: center;
+    /* box-shadow: 1px 1px 20px #14EACFFF, 1px 1px 30px #14EACFFF;
+    animation: anime 10s linear infinite; */
   }
+
+  
   
   /* Style the back side */
   .flip-card-back {
     background-color: #37474f;
     color: white;
     transform: rotateY(180deg);
-    border-radius: 5px;
+    border-radius: 10px;
+    border: 3px solid #bdbdbd;
   }
 
 .footer{
