@@ -794,7 +794,7 @@ button .nav-toggle{
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background: linear-gradient(to bottom, #669999 45%, #009999 79%);
+    background: linear-gradient(to bottom, #006666 37%, #00cc99 79%);
     color: #eceff1;
     font-family: 'Diplomata SC', cursive;
     font-size: 30px;
