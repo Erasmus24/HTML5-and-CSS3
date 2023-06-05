@@ -764,7 +764,7 @@ button .nav-toggle{
     width: 250px;
     height: 250px;
     /* border: 1px solid #f1f1f1; */
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px; /*  the 3D effect */
     border-radius: 20px;
   }
   
@@ -802,15 +802,11 @@ button .nav-toggle{
     border-radius: 10px;
     border: 3px solid #cfd8dc;
     text-align: center;
-    /* box-shadow: 1px 1px 20px #14EACFFF, 1px 1px 30px #14EACFFF;
-    animation: anime 10s linear infinite; */
   }
 
-  
-  
   /* Style the back side */
   .flip-card-back {
-    background-color: #37474f;
+    background: linear-gradient(to bottom, #37474f 28%, #78909c 87%);
     color: white;
     transform: rotateY(180deg);
     border-radius: 10px;
