@@ -11,28 +11,6 @@ navLinks.forEach(link => {
     })
 })
 
-// document.addEventListener("mousemove", parallax);
-// function parallax(event) {
-//   this.querySelectorAll(".about-me__img").forEach((shift) => {
-//     const position = shift.getAttribute("image-value");
-//     const x = (event.pageX * position) / 210;
-//     const y = (event.pageY * position) / 210;
-
-//     shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
-//   });
-// }
-
-document.onreadystatechange = () => {
-    if (document.readyState === 'complete') {
-      document.getElementById("containerLoader").classList.add('hide'); 
-  
-      setTimeout(function(){ 
-        document.getElementById("containerLoader").style.display = 'none';
-      }, 1000);
-    }
-  };
-
-
 /*
  * typingEffect()
  */
@@ -70,23 +48,23 @@ function typingEffect() {
 
 }
 typingEffect();
-// function shuffleArray(array) {
-//     let currentIndex = array.length,
-//         temporaryValue, randomIndex;
 
-//     // While there remain elements to shuffle...
-//     while (0 !== currentIndex) {
-
-//         // Pick a remaining element...
-//         randomIndex = Math.floor(Math.random() * currentIndex);
-//         currentIndex -= 1;
-
-//         // And swap it with the current element.
-//         temporaryValue = array[currentIndex];
-//         array[currentIndex] = array[randomIndex];
-//         array[randomIndex] = temporaryValue;
-//     }
-
-//     return array;
-// }
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);
+  
 

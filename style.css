@@ -762,7 +762,7 @@ button .nav-toggle{
 .flip-card {
     background-color: transparent;
     width: 250px;
-    height: 250px;
+    height: 350px;
     /* border: 1px solid #f1f1f1; */
     perspective: 1000px; /*  the 3D effect */
     border-radius: 20px;
@@ -811,6 +811,30 @@ button .nav-toggle{
     transform: rotateY(180deg);
     border-radius: 10px;
     border: 3px solid #bdbdbd;
+
+  }
+  
+
+  .reveal {
+    position: relative;
+    opacity: 0;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }
+  .active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+  }
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 
 .footer{
